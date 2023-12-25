@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
 </head>
 <body>
 
@@ -19,31 +19,7 @@
     <button type="submit">Log In</button>
   </form>
 
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-
-      // Send login data to the server
-      fetch('https://github.com/Dawgblood28/Testing', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        alert(data.message); // You can customize this alert based on the server response
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
