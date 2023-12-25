@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
   const password = document.getElementById('password').value;
 
   // Send login data to the server
-  fetch('http://your-server-ip:3000/login', {
+  fetch('https://github.com/Dawgblood28/Dawgblood28.github.io/tree/main', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
